@@ -36,7 +36,34 @@
             /////////////////////////////
             //숫자판별 내장 함수 사용-> isNan(값)
             //is not a Number? 숫자가 아니니?
-            console.log("숫자가 아니니? ", isNan(score));
+            //결과: 숫자가 아니면 true / 숫자면 false
+            console.log("숫자가 아니니? ", isNaN(score));
+
+            if(isNaN(score)) { //숫자가 아니면 들어감!
+                //1.메시지 출력하기
+                jexp.innerTex = "숫자만 입력해 주세요!";
+                console.log("여기들어옴");
+
+                 // 2. 글자색 초기화
+                 jexp.style.color = "#000";
+
+                // 3. 칭찬스티커 위치 초기화
+                jshow.style.backgroundPosition = "322px 0";
+
+                // 4. 입력창 내용지우기
+                jumsu.value = ""; // 빈문자넣어 지우기
+
+                // 5. 입력창에 포커스 주기(버튼을 클릭한 경우)
+                jumsu.focus();
+                // focus() 는 입력창에 커서를 보내는 JS내장함수
+
+
+                //이 if문에 들어온 경우
+                //여기서 함수를 나가게 하려면?
+                //return 키워드사용!!
+                return;
+                //함수를 나갈때 return!!!!!!
+            }///////if/////////////////////////
 
             ////////////////////
             ////3.점수환산하기////
