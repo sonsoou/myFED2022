@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic tag-구조 관련 요소</title>
+    <style>
+        header,nav ,section, aside, footer { border: 2px solid gray; margin: 10px ; }
+        header { text-align:center; }
+        nav { text-align: center;}
+        nav ul { } /*자손 선택자 */
+        nav li { display: inline; }
+
+        main {width: 1080px; overflow: hidden; border: 2px solid #f2644b; margin: auto;}
+
+        main section{ float: left; width: 800px;}
+        main aside { float: right; width: 200px;} /*float는 기본적인 문서 흐름에서 벗어난다 (동동떠다닌다)*/
+
+        footer {text-align: center;}
+    </style>
+</head>
+<body>
+    <header >
+        <h1>semantic</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+            <li><a href="#">MENU5</a></li>
+            <li><a href="#">MENU6</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>contents1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue urna, consequat eget dignissim malesuada, mattis non metus. Nullam dapibus efficitur urna sed porttitor. Fusce pretium, metus a dignissim eleifend, risus magna ullamcorper neque, a sollicitudin eros sapien nec neque. Nunc sapien ligula, imperdiet et tellus eleifend, sagittis maximus neque. Vestibulum nec tortor est. Pellentesque tempus enim id metus ullamcorper egestas. Sed at luctus libero, sed congue purus. Nam lacinia lacinia sapien ut malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque a rhoncus odio, ut scelerisque arcu. Morbi hendrerit bibendum mi ac mattis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id mauris eleifend, sagittis tellus id, euismod nunc. In hendrerit enim quis dui ullamcorper sodales id id ex.</p>
+            </article>
+            <article>
+            <h2>contents2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue urna, consequat eget dignissim malesuada, mattis non metus. Nullam dapibus efficitur urna sed porttitor. Fusce pretium, metus a dignissim eleifend, risus magna ullamcorper neque, a sollicitudin eros sapien nec neque. Nunc sapien ligula, imperdiet et tellus eleifend, sagittis maximus neque. Vestibulum nec tortor est. Pellentesque tempus enim id metus ullamcorper egestas. Sed at luctus libero, sed congue purus. Nam lacinia lacinia sapien ut malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque a rhoncus odio, ut scelerisque arcu. Morbi hendrerit bibendum mi ac mattis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id mauris eleifend, sagittis tellus id, euismod nunc. In hendrerit enim quis dui ullamcorper sodales id id ex.</p>
+            </article>
+            <article>
+            <h2>contents3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue urna, consequat eget dignissim malesuada, mattis non metus. Nullam dapibus efficitur urna sed porttitor. Fusce pretium, metus a dignissim eleifend, risus magna ullamcorper neque, a sollicitudin eros sapien nec neque. Nunc sapien ligula, imperdiet et tellus eleifend, sagittis maximus neque. Vestibulum nec tortor est. Pellentesque tempus enim id metus ullamcorper egestas. Sed at luctus libero, sed congue purus. Nam lacinia lacinia sapien ut malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque a rhoncus odio, ut scelerisque arcu. Morbi hendrerit bibendum mi ac mattis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id mauris eleifend, sagittis tellus id, euismod nunc. In hendrerit enim quis dui ullamcorper sodales id id ex.</p>
+            </article>
+            <!-- 더미 텍스트 이용(https://www.lipsum.com/)-->
+        </section>
+        <aside >
+            <img src="https://via.placeholder.com/200x300 " alt="">
+            <img src="https://via.placeholder.com/200x100 " alt="">
+            
+            <!-- 더미 이미지 이용(https://placeholder.com)-->
+        </aside>
+    </main>
+    <footer>
+        <address>서울시 강남구 역삼동 강남대로 장연빌딩 523호</address>
+            <p>2022 &copy; copytight All right reserved</p>
+    </footer>
+</body>
+</html>

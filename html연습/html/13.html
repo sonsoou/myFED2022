@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table(표) 만들기3</title>
+    <style>
+        body{ padding: 50px;}
+    </style>
+</head>
+<body>
+    <table border="1" width="200" >
+        <caption>테이블 구조</caption>
+
+        <tfoot style="background:coral" >
+            <tr>
+                <th>평균</th>
+                <th>85.33</th>
+            </tr>
+            </tfoot>
+            <!--풋터는 어차피 맨위로(먼저작성) 올라와도 테이블 밑으로 내려간다-->
+
+        <thead style="background:skyblue ;">
+            <tr>
+            <th>교과목</th>
+            <th>점수</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <th>HTML</th>
+            <td>95</td>
+            </tr>
+            
+            <tr>
+            <th>CSS</th>
+            <td>89</td>
+            </tr>
+        <tr>
+            <th>JavaScript</th>
+            <td>72</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <br><br><br>
+    <style>
+        #hw { width:650px;}
+        #hw td { color:#888888 ;font-size: 14px; text-align:center; }
+    </style>
+    <table id="hw" border="1" cellspacing="1">
+        <!--아이디 설정하면 좋아-->
+        <caption>한화리조트 | 거제 벨버디어_퇴실 연장 요금 안내</caption>
+        <colgroup>
+            <col>
+            <col width="130px">
+            <col width="160px">
+            <col width="160px">
+        </colgroup>
+
+        <thead>
+        <tr style="background:rgb(159, 223, 103);" >
+            <th colspan="2" rowspan="2">시기</th>
+            <th colspan="2">퇴실 연장요금</th>
+        </tr>
+        <tr style="background:rgb(211, 251, 148) ;">
+            <th>회원</th>
+            <th>비회원</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <td rowspan="3">주말/연휴/성수기</td>
+            <td>11시~14시</td>
+            <td>10,000</td>
+            <td>20,000</td>
+        </tr>
+        <tr>
+            <td>14~17시</td>
+            <td>20,000</td>
+            <td>40,000</td>
+        </tr>
+        <tr>
+            <td>17시~</td>
+            <td colspan="2">일일 객실료</td>
+        </tr>
+        <tr>
+            <td rowspan="3">비수기 주중</td>
+            <td>12~15시</td>
+            <td>10,000</td>
+            <td>20,000</td>
+        </tr>
+        <tr>
+            <td>15시~17시</td>
+            <td>20,000</td>
+            <td>40,000</td>
+        </tr>
+        <tr>
+            <td>17시~</td>
+            <td colspan="2">일일 객실료</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

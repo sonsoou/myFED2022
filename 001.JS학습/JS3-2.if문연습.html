@@ -60,16 +60,18 @@
             
             // 버튼요소
             var btns = document.querySelectorAll('.btns');
-            // 첫번째 버튼 링크 걸기
-            btns[0].onclick = function(){chgImg(this);};
-            btns[1].onclick = function(){chgImg(this);};
-            btns[2].onclick = function(){chgImg(this);};
-            btns[3].onclick = function(){chgImg(this);};
+            console.log('버튼개수:',btns.length);
+
+            //for문으로 모든버튼의 링크를 세팅한다!
+            for(let i=0; i<btns.length; i++) {
+                
+                btns[i].onclick = function(){chgImg(this);}; /////click//////////
+            }/////////////for문/////////////
 
             //클릭된 버튼 요소 자신을 보내는 키워드 -> this
             //this는 '나자신'을 뜻함
 
-        });/////////////////////load구역
+        });/////////////////////load구역//////////////
 
 
 
@@ -81,7 +83,7 @@
 
         //0.버튼자신을 보낸 U에서 텍스트읽기
         var btxt = U.innerText;
-        //innerText는 내부 슬자 읽을떄도 사용함!
+        //innerText는 내부 글자 읽을떄도 사용함!
 
 
         //1.함수호출확인
@@ -105,7 +107,7 @@
             document.querySelector('#scene')
                 .src = isrc;
 
-       }////////////////////////////////////chgImg함수///////////////////////////////
+        }////////////////////////////////////chgImg함수///////////////////////////////
         
     </script>
 </head>
