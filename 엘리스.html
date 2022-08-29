@@ -32,6 +32,7 @@ function triangle(width,height) {
 document.write(triangle(5, 7));
 
 ========================================================
+글자뒤집기 
 function reverse(str){
 
     var reverStr = "";
@@ -43,3 +44,21 @@ function reverse(str){
 };
 
 document.write(reverse("Nice to meet you"));
+
+
+=============================================
+
+// 반복문을 이용하여 3, 6, 9 게임을 만들어주세요!
+for (var i = 1; i <= 30; i++){
+
+    if((i % 10) % 3 == 0 && i % 10 != 0) {
+        console.log("짝!");
+    }
+    else if (Math.floor((i / 10) % 3) == 0 && Math.floor(i / 10) != 0) {
+  console.log("짝!");
+    }
+    else {
+  console.log(i);
+
+    };
+};
