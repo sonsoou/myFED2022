@@ -1,0 +1,45 @@
+/* 지시사항 1번 내용을 코드로 작성해보세요. */
+var str1 = "Hello World";
+
+/* 지시사항 2번 내용을 코드로 작성해보세요. */
+document.write(str1.length);
+
+/* 지시사항 3번 내용을 코드로 작성해보세요. */
+document.write(str1.charAt(0));
+
+/* 지시사항 4번 내용을 코드로 작성해보세요. */
+document.write(str1.split(" "));
+
+
+/* 지시사항 1번 내용을 코드로 작성해보세요. */
+var str1 = "20.14";
+
+/* 지시사항 2번 내용을 코드로 작성해보세요. */
+document.write(parseInt(str1));
+
+/* 지시사항 3번 내용을 코드로 작성해보세요. */
+document.write(parseFloat(str1));
+
+
+// 삼각형의 넓이를 구하는 함수를 완성시켜 보세요.
+function triangle(width,height) {
+
+    return width * height / 2
+
+
+}
+
+document.write(triangle(5, 7));
+
+========================================================
+function reverse(str){
+
+    var reverStr = "";
+    /* 지시사항 내용을 코드로 작성해보세요. */
+        for (var i =str.length-1; i>=0; i--) {
+            reverStr =reverStr + str.charAt(i);
+        };
+    return reverStr;
+};
+
+document.write(reverse("Nice to meet you"));
